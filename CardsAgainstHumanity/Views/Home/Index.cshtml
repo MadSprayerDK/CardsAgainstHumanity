@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Cards Aagainst Humanity";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>@ViewBag.Title</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+
+    <!-- Style Sheets-->
+    <link type="text/css" rel="stylesheet" href="~/Content/bootstrap.min.css" />
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="~/Scripts/Cards.Welcome.js"></script>
+    <script type="text/javascript" src="~/Scripts/Cards.Lobby.js"></script>
+    <script  type="text/javascript" src="~/Scripts/Cards.Game.js"></script>
+    <script type="text/javascript" src="~/Scripts/Cards.SignalR.js"></script>
+</head>
+<body style="margin-bottom: 50px;">
+
+<div class="container">
+
+    @Html.Partial("Pages/Lobby/_Welcome")
+    @Html.Partial("Pages/Lobby/_NewLobby")
+    @Html.Partial("Pages/Lobby/_JoinLobby")
+    @Html.Partial("Pages/Lobby/_Lobby")
+
+    @Html.Partial("Pages/Game/_Question")
+    @Html.Partial("Pages/Game/_Answers")
+    @Html.Partial("Pages/Game/_Score")
+</div>
+</body>
+</html>

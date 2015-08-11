@@ -1,0 +1,30 @@
+﻿<div class="row" id="Page_Score" style="display: none;">
+    <hr />
+    <div class="col-lg-12">
+        <div class="panel-group" id="Score_ScoreCollapse" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#Score_ScoreCollapse" href="#Score_ScoreContent" aria-expanded="false" aria-controls="collapseOne">
+                            Socres & Quit
+                        </a>
+                    </h4>
+                </div>
+                <div id="Score_ScoreContent" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        <table id="Score_ScoreList" class="table table-striped table-bordered" style="text-align: left;"></table>
+                    </div>
+                    <div class="panel-body">
+                        Pressing the button below will:
+                        <ul>
+                            <li>Return all users to the lobby</li>
+                            <li>Reset all scores</li>
+                            <li>Deal new cards</li>
+                        </ul>
+                        <input type="button" value="Return to lobby!" class="btn btn-default" id="Score_ReturnToLobby"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
